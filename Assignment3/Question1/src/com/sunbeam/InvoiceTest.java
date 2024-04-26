@@ -6,7 +6,7 @@ public class InvoiceTest {
 		// TODO Auto-generated method stub
 		Invoice invoice1 = new Invoice();
 		Invoice incoice2 = new Invoice();
-		Invoice invoice3 = new Invoice();
+		//Invoice invoice3 = new Invoice();
 
 		invoice1.accept();
 		invoice1.display();
