@@ -6,19 +6,21 @@ public class Mango extends Fruit {
 		super();
 	}
 
-	public Mango(String color, double weight, String name, boolean isFresh) {
+	public Mango(String color, String name, double weight, boolean isFresh) {
 		super(color, weight, name, isFresh);
 	}
 
 	@Override
 	public String toString() {
-		return "Mango [getColor()=" + getColor() + ", getWeight()=" + getWeight() + ", getName()=" + getName()
-				+ ", isFresh()=" + isFresh() + ", toString()=" + super.toString() + "]";
+		return "Mango [color=" + color + ", weight=" + weight + ", name=" + name + ", isFresh=" + isFresh + "]";
 	}
 	
+	public String taste()
+	{
+		return "sweet ";
+		
+	}
 	
-	
-	
-	
+		
 
 }

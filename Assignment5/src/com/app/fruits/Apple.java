@@ -6,13 +6,19 @@ public class Apple extends Fruit {
 		super();
 	}
 
-	public Apple(String color, double weight, String name, boolean isFresh) {
+	public Apple(String color, String name, double weight, boolean isFresh) {
 		super(color, weight, name, isFresh);
 	}
 
 	@Override
 	public String toString() {
 		return "Apple [color=" + color + ", weight=" + weight + ", name=" + name + ", isFresh=" + isFresh + "]";
+	}
+	
+	public String taste()
+	{
+		return "sweet n sour";
+		
 	}
 	
 	

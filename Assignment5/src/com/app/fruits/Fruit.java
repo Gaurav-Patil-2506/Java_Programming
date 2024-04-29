@@ -11,7 +11,6 @@ public class Fruit {
 		
 	}
 
-
 	public Fruit(String color, double weight, String name, boolean isFresh) {
 		this.color = color;
 		this.weight = weight;
@@ -57,6 +56,10 @@ public class Fruit {
 
 	public void setFresh(boolean isFresh) {
 		this.isFresh = isFresh;
+	}
+	public String taste()
+	{
+		return "No Specific Taste";		
 	}
 
 
