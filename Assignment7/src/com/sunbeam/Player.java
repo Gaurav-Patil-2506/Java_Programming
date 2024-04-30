@@ -61,9 +61,7 @@ public abstract class Player {
 		System.out.println("Enter Age");
 		age = sc.nextInt();
 		System.out.println("Enter matchesPlayed");
-		matchesPlayed = sc.nextInt();
-		
-		sc.close();		
+		matchesPlayed = sc.nextInt();		
 	}
 
 	

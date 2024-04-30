@@ -55,10 +55,52 @@ public class Test {
 						System.out.println("No details of player...!");
 						}
 				 }
-				 break;				  
+				 break;
+			  
+			  case 3:
+				 for(Player p:arr){
+					if(p!=null) {
+						Cricketer c = (Cricketer)p;
+						total_runs+=c.getRuns();
+					}
+				  }
+					System.out.println("Total runs = "+total_runs);
+					break;		
+					
+			  case 4:
+				 for(Player p:arr) {
+					if(p!=null) {
+						Cricketer c = (Cricketer)p;
+						total_wickets+=c.getWickets();
+					}
+				 }
+					System.out.println("Total wickets = "+total_wickets);
+					break;
+					
+				case 5:
+					for(Player p:arr) {
+						if(p!=null) {
+							total_matches+=p.getMatchesPlayed();
+						}
+					}
+					System.out.println("Total matches played = "+total_matches);
+
+					break;
+					
+				case 6 :
+					for(Player p:arr) {
+						if(p!=null) {
+							System.out.println("Name = "+p.getName()+"    No.of matches = "+p.getMatchesPlayed());
+						}
+					}					
+					break;
+					
+				default:
+					System.out.println("Invalid choice...!....Try again ");
+					break;
 			}
 		}
-
+		sc.close();
 	}
 
 }
